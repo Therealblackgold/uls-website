@@ -1,38 +1,469 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --main-color: #ebc56c;
+  --light-primary-color: #d7bf52;
+  --primary-color: #c5ae49;
+  --dark-primary-color: #ad8432;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*
+===============
+ global styles
+ ==============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 75px;
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
   min-height: 100vh;
+  margin-bottom: 5rem;
+  padding: 5em 0 5em 0;
+  background: linear-gradient(
+      rgba(250, 247, 247, 0.903),
+      rgba(251, 245, 245, 0.878)
+    ),
+    url("./assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.heading {
+  font-family: "Gideon Roman", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.heading span {
+  color: var(--primary-color);
+}
+
+.sub-heading {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: "Gideon Roman", cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+.btn i {
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.btn-outline-primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--light-primary-color);
+  border: none;
+}
+
+/*
+=================================
+ header contact component styles
+ ================================
+*/
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  color: #222;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  background-color: var(--primary-color);
+}
+
+.header-contact span {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header-contact a {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222;
+  text-decoration: none;
+}
+
+.header-contact span i {
+  margin-right: 0.5rem;
+  color: white;
+  background-color: #222;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+/*
+============================
+Navigation component styles
+============================
+*/
+
+.navbar .logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: #222;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.nav-link {
+  text-transform: capitalize;
+}
+
+.active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/*
+============================
+Hero component styles
+============================
+*/
+
+.hero {
+  background-color: whitesmoke;
+  /* background-color: #222; */
+  /* color: whitesmoke; */
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left h1 {
+  font-weight: bold;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+============================
+Intro component styles
+============================
+*/
+
+.intro-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.508);
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+============================
+About component styles
+============================
+*/
+
+.about-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+}
+
+/*
+============================
+Mission component styles
+============================
+*/
+
+.vision-content li,
+.mission-content li {
+  margin-bottom: 1rem;
+}
+
+.mission-content {
+  margin-bottom: 1rem;
+  background-color: #222;
   color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.philosophy-img {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 0.9rem solid var(--primary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.philosophy-statement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-statement p {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  color: gray;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.9rem solid var(--primary-color);
+}
+
+/*
+============================
+  Assurance component styles
+============================
+*/
+
+.assurance .surety {
+  background-color: #222;
+  color: white;
+  font-size: 20px;
+  padding: 0.3rem;
+  width: fit-content;
+  border: 2px solid var(--primary-color);
+}
+
+/*
+============================
+Clients component styles
+============================
+*/
+
+.clients-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 1rem;
+}
+
+.clients-wrapper img {
+  width: auto;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+/*
+============================
+List component styles
+============================
+*/
+
+.list-heading {
+  background-color: #222;
+  color: white;
+  width: fit-content;
+  padding: 0.2rem;
+  border: 2px solid var(--primary-color);
+}
+
+/*
+============================
+Square component styles
+============================
+*/
+
+.img-container {
+  position: relative;
+  left: 5rem;
+}
+
+.img-container img {
+  position: absolute;
+  max-height: 8rem;
+  width: auto;
+  margin: auto;
+  top: 2rem;
+  left: 3rem;
+  background-color: rgba(255, 255, 255, 0.794);
+  z-index: 99;
+}
+
+.img-container .square {
+  position: absolute;
+  height: 8rem;
+  width: 8rem;
+  margin-left: 2rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #222;
+}
+
+/*
+============================
+Training component styles
+============================
+*/
+
+.training-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.training-img-wrapper img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
+/*
+============================
+Team component styles
+============================
+*/
+
+.team {
+  position: relative;
+}
+
+.team-box {
+  background-color: rgba(255, 255, 255, 0.51);
+  /* background-color: #151515; */
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.team p {
+  margin: 14px 0 75px 0;
+}
+
+.team-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.team-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  border: 0.2rem solid var(--primary-color);
+}
+
+.team-slider h5 {
+  color: #222;
+  letter-spacing: 2px;
+}
+.team-slider span {
+  color: var(--dark-primary-color);
+  letter-spacing: 2px;
+}
+
+/*
+============================
+Footer component styles
+============================
+*/
+
+.footer {
+  padding: 20px 0 50px 0;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.footer span {
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.footer span i {
+  margin: 0 0.5rem;
+  color: white;
+  background-color: #222;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.footer .social-icon a {
+  /* color: white; */
+  color: var(--primary-color);
+  text-decoration: none;
 }
