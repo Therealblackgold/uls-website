@@ -15,7 +15,9 @@ const Clients = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section style={{ overflow: "hidden", marginBottom: "0" }}>
+    <section
+      style={{ overflow: "hidden", marginBottom: "0", marginTop: "5rem" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-md">

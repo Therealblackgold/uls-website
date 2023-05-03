@@ -25,7 +25,7 @@ const TeamCarousel = () => {
   };
   return (
     <Row>
-      <Col>
+      <Col className="d-md-none mt-5">
         <div className="team-box">
           <Carousel
             responsive={responsive}

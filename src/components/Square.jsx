@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import LOGO from "../assets/lg-logo.png";
+import LOGO from "../assets/UlsLogo.png";
 
 const Square = () => {
   return (

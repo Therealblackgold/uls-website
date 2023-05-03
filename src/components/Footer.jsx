@@ -1,15 +1,17 @@
 import { Col, Container, Row } from "react-bootstrap";
-import logo from "../assets/lg-logo.png";
+import Logo from "../assets/UlsLogo.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
-          <Col sm={6}>
-            <img src={logo} alt="logo" style={{ width: "6rem" }} />
-          </Col>
-          <Col sm={6} className="text-center text-sm-end">
+        <div className="row">
+          <div className="col-md text-center">
+            <img
+              src={Logo}
+              alt="logo"
+              style={{ width: "6rem", margin: "1rem" }}
+            />
             <div className="social-icon">
               <a href="tel:011732 1004">
                 <span>
@@ -29,8 +31,8 @@ const Footer = () => {
               </a>
             </div>
             <p>All Rights Reserved UPPER LEVEL SECURITY &copy; </p>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     </footer>
   );

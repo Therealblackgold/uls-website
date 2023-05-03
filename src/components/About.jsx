@@ -14,10 +14,10 @@ const About = () => {
     <section className="about" id="about">
       <div className="container">
         <div className="row">
-          <h1 className="heading text-center mb-5" data-aos="fade-down">
-            our <span>history</span>
-          </h1>
-          <div className="col-md-6 about-content">
+          <div className="col about-content">
+            <h1 className="heading text-center mb-5" data-aos="fade-down">
+              our <span>history</span>
+            </h1>
             <p className="lead" data-aos="fade-up">
               After realizing that in this industry, every company is doing
               things the same way, lack of innovation in the industry was the
@@ -41,11 +41,16 @@ const About = () => {
             </p>
           </div>
           <div className="col-md" data-aos="zoom-in">
-            <img src={IMG04} alt="" className="mb-2" />
-            <img src={IMG05} alt="" />
+            <img
+              src={IMG04}
+              alt=""
+              className="mb-2"
+              style={{ borderRadius: "2rem" }}
+            />
+            <img src={IMG05} alt="" style={{ borderRadius: "2rem" }} />
           </div>
           <div className="col-md" data-aos="zoom-in">
-            <img src={IMG03} alt="" />
+            <img src={IMG03} alt="" style={{ borderRadius: "2rem" }} />
           </div>
         </div>
       </div>

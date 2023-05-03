@@ -1,4 +1,8 @@
-import IMG06 from "../assets/IMG-06.png";
+import MissionGraphic1 from "../assets/MissionGraphic1.png";
+import Logo from "../assets/UlsLogo.png";
+import Ellipse from "../assets/Ellipse37.png";
+import GraphicBronze from "../assets/GraphicBronze.png";
+import GraphicCar from "../assets/GraphicCar.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -9,18 +13,23 @@ const Mission = () => {
   }, []);
 
   return (
-    <section className="mission" id="mission" style={{ overflow: "hidden" }}>
-      <div className="container">
+    <section
+      className="mission"
+      id="mission"
+      style={{ overflow: "hidden", position: "relative" }}
+    >
+      <div className="container-fluid">
         <div className="row">
-          <h1 className="text-center heading mb-5" data-aos="fade-down">
-            mission <span>statement</span>
-          </h1>
-          {/* vision */}
-          <div className="col-md shadow" data-aos="fade-up">
+          {/* LOGO */}
+          {/* <div className="col-md-12 text-center pb-5">
+            <img src={Logo} alt="" style={{ width: "15rem" }} />
+          </div> */}
+          {/* VISION */}
+          <div className="col-12 col-lg-4 mx-md-3" data-aos="fade-up">
             <div className="vision-content">
-              <h2 className="sub-heading text-center mb-3">
-                our vision<i className="bi bi-eye mx-3"></i>
-              </h2>
+              <h1 className="text-center heading mb-3" data-aos="fade-down">
+                our <span>vision</span>
+              </h1>
               <ul>
                 <li className="lead">
                   To contribute in fighting crime and poverty by creating
@@ -42,17 +51,14 @@ const Mission = () => {
                   electronic devices set for the job at hand.
                 </li>
               </ul>
-            </div>
-          </div>
-          {/*  mission */}
-          <div
-            className="col-md mt-sm-5 mt-md-0 mission-content mx-md-3"
-            data-aos="fade-up"
-          >
-            <div className="">
-              <h2 className="sub-heading text-center mb-3">
-                our mission<i className="bi bi-people mx-3"></i>
-              </h2>
+
+              {/* MISSION */}
+              <h1
+                className="text-center heading mt-5 mb-3"
+                data-aos="fade-down"
+              >
+                our <span>mission</span>
+              </h1>
               <ul>
                 <li className="lead">
                   To empower our employees to fulfill their aspirations and
@@ -66,33 +72,48 @@ const Mission = () => {
               </ul>
             </div>
           </div>
-        </div>
-        {/*  philosophy */}
-        <div className="row mt-5" data-aos="fade-up">
-          <div className="col-md-8 text-center  shadow py-5 mx-auto">
-            <h2 className="sub-heading">
-              our philosophy<i className="bi bi-lightbulb mx-3"></i>
-            </h2>
-            <p className="lead">
-              Driven by our core values of integrity and commitment to our
-              stakeholders, excellence and professionalism in our service,
-              creative concepts and the integrated team work to deliver. Upper
-              Level Security Services will provide a superior service, tailor
-              made to suit specific clients’ needs.
-            </p>
-            <div className="row">
-              <div className="col-md" data-aos="zoom-in">
-                <img src={IMG06} alt="" className="philosophy-img" />
-              </div>
-              <div
-                className="col-md mt-sm-3 mt-md-0 philosophy-statement"
-                data-aos="zoom-in"
-              >
-                <p className="lead">
-                  “TO BE THE LEADING ORGANIZATION IN THE INDUSTRY”
-                </p>
-              </div>
+
+          {/* GRAPHIC COL */}
+          <div
+            className="col-md-2 text-center d-none d-lg-block"
+            style={{ position: "relative" }}
+          >
+            <img
+              src={MissionGraphic1}
+              alt=""
+              style={{
+                width: "18rem",
+                height: "30rem",
+                borderRadius: "10rem 10rem 2rem 2rem",
+              }}
+            />
+            <div className="mission-graphic-x">
+              <img src={Ellipse} alt="" className="ellipse" />
             </div>
+          </div>
+
+          {/*  PHILOSOPHY COL */}
+          <div
+            className="col-md-5 d-none d-lg-block philosophy"
+            style={{
+              position: "absolute",
+              top: "5rem",
+              right: "8rem",
+            }}
+          >
+            <h1 className="text-center heading mb-3" data-aos="fade-down">
+              our <span>philosophy</span>
+            </h1>
+            <p className="lead uls-quote">
+              “ Strive not to be a <br /> success, but rather <br /> to be of
+              value ”
+            </p>
+            <img src={GraphicBronze} alt="mission-graphic-bronze" />
+            <img
+              src={GraphicCar}
+              alt="mission-graphic-car"
+              className="mission-graphic-car "
+            />
           </div>
         </div>
       </div>

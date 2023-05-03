@@ -1,12 +1,17 @@
 import { vipServices1, vipServices2, vipServices3 } from "../data";
+import VipGraphic from "../assets/VipGraphic.png";
 
 const VipList = () => {
   return (
-    <section style={{ marginBottom: "0" }}>
+    <section
+      id="vip"
+      className="vip"
+      style={{ marginBottom: "0", position: "relative" }}
+    >
       <div className="container">
         <div className="row">
           <h1 className="heading text-center mb-5">
-            VIP PROTECTION/<span>BODYGUARDING</span>
+            VIP PROTECTION/<span>CLOSE PROTECTION OFFICER</span>
           </h1>
           <div className="col-md">
             <p className="lead">
@@ -22,7 +27,7 @@ const VipList = () => {
               operational groups based on the CPO’s actual field of expertise.
               These would be:
             </p>
-            <p className="lead">
+            <p className="lead text-dark">
               <b>Single CPO</b> Usually required for ad hoc hourly or daily work
               generally for low-key security requirements and escourting. Our
               Category 1 CPO’s are specialists in one-on-one protection,
@@ -31,7 +36,7 @@ const VipList = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg">
+          <div className="col-12 col-lg">
             <h4 className="list-heading">
               Execute Protection CPO - Specializing in:
             </h4>
@@ -43,7 +48,7 @@ const VipList = () => {
               ))}
             </ul>
           </div>
-          <div className="col-lg">
+          <div className="col-12 col-lg">
             <h4 className="list-heading">Team Leader – Specializing in:</h4>
             <ul className="list">
               {vipServices2.map((service, index) => (
@@ -55,19 +60,22 @@ const VipList = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg">
-            <div className="col-lg">
-              <h4 className="list-heading">
-                High-Threat CPO – Specializing in:
-              </h4>
-              <ul className="list">
-                {vipServices3.map((service, index) => (
-                  <li key={index} className="lead">
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="col-12 col-lg-4">
+            <h4 className="list-heading">High-Threat CPO – Specializing in:</h4>
+            <ul className="list">
+              {vipServices3.map((service, index) => (
+                <li key={index} className="lead">
+                  {service}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* GRAPHIC */}
+          <div
+            className="col-md-6 d-none d-lg-block"
+            style={{ position: "absolute", bottom: "0", left: "30rem" }}
+          >
+            <img src={VipGraphic} alt="" style={{ width: "80rem" }} />
           </div>
         </div>
       </div>

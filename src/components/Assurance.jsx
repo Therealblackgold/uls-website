@@ -1,6 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Logo from "../assets/UlsLogo.png";
+// import AssuranceGraphic2 from "../assets/AssuranceGraphic2.png";
+import Quotes from "../assets/qu.png";
+import { color } from "framer-motion";
 
 const Assurance = () => {
   useEffect(() => {
@@ -8,11 +12,11 @@ const Assurance = () => {
   }, []);
   return (
     <section className="assurance" id="assurance">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-md-10 mx-auto">
+          <div className="col-12 col-lg-4 mx-auto px-5" style={{ zIndex: "2" }}>
             <h1 className="heading text-center mb-5" data-aos="fade-down">
-              QUALITY <span>ASSURANCE</span>
+              QUALITY <br /> <span>ASSURANCE</span>
             </h1>
             <span className="surety">100% Reliable</span>
             <p className="lead mt-3" data-aos="fade-up">
@@ -49,6 +53,29 @@ const Assurance = () => {
               guards are working accordingly, that there are no illegal dealings
               that are made on site and that all operations are ran smoothly.
             </p>
+          </div>
+          {/* TWO EMPTY DIV */}
+          <div className="col-md-4"></div>
+          <div
+            className="col-md-4 image-wrapper"
+            style={{ zIndex: "2", position: "relative" }}
+          >
+            <img
+              src={Logo}
+              alt="Upper Level Security Logo"
+              className="assurance-logo d-none d-lg-block "
+            />
+            {/* ABSOLUTE MD ONLY IMAGE */}
+            <div className="d-none d-lg-block text-center assurance-graphicx">
+              <img
+                src={Quotes}
+                alt=""
+                style={{ width: "4rem", filter: "invert(100%)" }}
+              />
+              <p className="lead text-white">
+                The only way to do great <br /> work is to love what you do.{" "}
+              </p>
+            </div>
           </div>
         </div>
       </div>
