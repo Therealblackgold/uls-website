@@ -816,6 +816,13 @@ Footer component styles
 }
 
 @media (max-width: 500px) {
+  .navbar .logo {
+    font-size: 15px;
+    background: none !important;
+    color: #222 !important;
+    border-radius: 0;
+  }
+
   h1,
   h2,
   h3 {

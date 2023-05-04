@@ -1,5 +1,6 @@
 import { vipServices1, vipServices2, vipServices3 } from "../data";
 import VipGraphic from "../assets/VipGraphic.png";
+import IMG08 from "../assets/mobile/IMG-08.jpg";
 
 const VipList = () => {
   return (
@@ -69,6 +70,15 @@ const VipList = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* MOBILE IMG */}
+          <div className="col-md text-center d-md-none mt-5">
+            <img
+              src={IMG08}
+              alt=""
+              style={{ height: "20rem", width: "auto" }}
+            />
           </div>
           {/* GRAPHIC */}
           <div

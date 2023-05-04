@@ -3,6 +3,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Logo from "../assets/UlsLogo.png";
 import { Link } from "react-router-dom";
+import IMG08 from "../assets/TrainingGraphic.jpg";
+import IMG20 from "../assets/mobile/IMG20.png";
 
 const Intro = () => {
   useEffect(() => {
@@ -53,6 +55,15 @@ const Intro = () => {
             >
               <i className="bi bi-chevron-right"></i>get quote
             </Link>
+
+            {/* MOBILE IMG */}
+            <div className="col-md d-md-none mt-5">
+              <img
+                src={IMG20}
+                alt=""
+                style={{ height: "15rem", width: "auto" }}
+              />
+            </div>
           </div>
           {/* TWO EMPTY DIV */}
           <div className="col-md-3"></div>
@@ -85,6 +96,16 @@ const Intro = () => {
               we have served with pride without compromising the standard of
               service because safety is our priority.
             </p>
+
+            {/* MOBILE IMG */}
+            <div className="col-md d-md-none">
+              <img
+                src={IMG08}
+                alt=""
+                style={{ height: "15rem", width: "auto" }}
+              />
+            </div>
+
             {/* LOGO MD ONLY */}
             <div
               className="d-none d-md-block"

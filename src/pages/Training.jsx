@@ -5,6 +5,7 @@ import TrainingGraphic from "../assets/TrainingGraphic.jpg";
 import TrainingGraphicChart from "../assets/TrainingGraphicChart.png";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
+import IMG04 from "../assets/mobile/img-04.jpg";
 
 const Training = () => {
   return (
@@ -93,6 +94,10 @@ const Training = () => {
                 alt=""
                 className="training-graphic-image"
               />
+            </div>
+
+            <div className="col-md d-md-none">
+              <img src={IMG04} alt="" />
             </div>
           </div>
         </div>
