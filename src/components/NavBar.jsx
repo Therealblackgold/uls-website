@@ -2,6 +2,7 @@ import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 import ContactHeader from "./ContactHeader";
 import Logo from "../assets/UlsLogo.png";
 import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   return (

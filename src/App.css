@@ -715,6 +715,16 @@ Training component styles
 
 /*
 ============================
+ContactUs component styles
+============================
+*/
+
+.contact {
+  min-height: 0;
+}
+
+/*
+============================
 Footer component styles
 ============================
 */
