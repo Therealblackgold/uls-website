@@ -10,7 +10,7 @@ const Footer = () => {
             <img
               src={Logo}
               alt="logo"
-              style={{ width: "6rem", margin: "1rem" }}
+              style={{ width: "6rem", margin: "1rem", marginTop: "5rem" }}
             />
             <div className="social-icon">
               <a href="tel:011732 1004">

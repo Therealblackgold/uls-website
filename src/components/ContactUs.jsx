@@ -15,7 +15,7 @@ const ContactUs = () => {
     }
   };
   return (
-    <section className="contact" id="contact" style={{ background: "#222" }}>
+    <section className="contact" id="contact">
       <div className="container">
         <div className="row">
           <motion.div

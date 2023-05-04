@@ -4,6 +4,7 @@ import Square from "../components/Square";
 import TeamCarousel from "../components/TeamCarousel";
 import TeamSquare from "../components/TeamSquare";
 import DirectorsNote from "../components/DirectorsNote";
+import Header from "../components/Header";
 
 const Team = () => {
   const firstRow = [
@@ -21,6 +22,7 @@ const Team = () => {
 
   return (
     <AnimatePage>
+      <Header />
       <DirectorsNote />
       <section
         className="team"

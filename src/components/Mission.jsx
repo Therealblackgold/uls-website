@@ -20,10 +20,6 @@ const Mission = () => {
     >
       <div className="container-fluid">
         <div className="row">
-          {/* LOGO */}
-          {/* <div className="col-md-12 text-center pb-5">
-            <img src={Logo} alt="" style={{ width: "15rem" }} />
-          </div> */}
           {/* VISION */}
           <div className="col-12 col-lg-4 mx-md-3" data-aos="fade-up">
             <div className="vision-content">

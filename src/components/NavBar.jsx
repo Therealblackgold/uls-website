@@ -10,7 +10,7 @@ const NavBar = () => {
       <ContactHeader />
       <Navbar bg="light" expand="md" className="fixed-top shadow">
         <div className="container-fluid">
-          <Navbar.Brand href="#home" className="logo">
+          <Navbar.Brand href="#home" className="logo mb-2">
             <img
               src={Logo}
               alt="Upper Level Security Logo"

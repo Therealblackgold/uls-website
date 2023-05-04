@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Training from "../assets/TrainingGraphic.jpg";
 
 const Hero = () => {
   useEffect(() => {
@@ -37,16 +38,37 @@ const Hero = () => {
               Specifically designed for each of our business partner’s unique
               requirements, rather than a general approach.
             </p>
+            <div className="row">
+              <div className="col-md-4">
+                <Link
+                  to="mailto:mmohau1@gmail.com"
+                  target="_blank"
+                  className="btn btn-outline-primary  shadow mt-md-3 mt-lg-0 mb-md-0 d-none d-md-block"
+                >
+                  <i className="bi bi-chevron-right"></i>get free quote
+                </Link>
+              </div>
+              <div className="col-md-4">
+                <Link
+                  to="/services"
+                  className="btn btn-primary shadow mt-md-3 mt-lg-0 mb-lg-0  d-none d-md-block"
+                >
+                  <i className="bi bi-chevron-right"></i>view services
+                </Link>
+              </div>
+            </div>
+
+            {/* MOBILE BUTTONS */}
             <Link
               to="mailto:mmohau1@gmail.com"
               target="_blank"
-              className="btn btn-lg btn-outline-primary mx-3 shadow mt-md-3 mt-lg-0 mb-3 mb-md-0"
+              className="btn btn-sm btn-outline-primary  shadow mt-md-3 mt-lg-0 mb-md-0 d-md-none"
             >
               <i className="bi bi-chevron-right"></i>get free quote
             </Link>
             <Link
               to="/services"
-              className="btn btn-lg btn-primary mx-3 shadow mt-md-3 mt-lg-0 mb-lg-0"
+              className="btn btn-sm  btn-primary mx-2 shadow mt-md-3 mt-lg-0 mb-lg-0 d-md-none"
             >
               <i className="bi bi-chevron-right"></i>view services
             </Link>

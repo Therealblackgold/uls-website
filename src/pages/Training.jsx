@@ -4,10 +4,12 @@ import Logo from "../assets/UlsLogo.png";
 import TrainingGraphic from "../assets/TrainingGraphic.jpg";
 import TrainingGraphicChart from "../assets/TrainingGraphicChart.png";
 import { motion } from "framer-motion";
+import Header from "../components/Header";
 
 const Training = () => {
   return (
     <AnimatePage>
+      <Header />
       <section
         className="training"
         style={{ overflow: "hidden", position: "relative" }}

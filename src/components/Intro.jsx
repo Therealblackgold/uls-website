@@ -17,7 +17,7 @@ const Intro = () => {
             <img src={IMG02} alt="" className="one" />
           </div> */}
           <div className="col-12 col-lg-4 intro-content text-center text-md-start px-lg-5">
-            <h1 className=" text-center mb-3 heading">
+            <h1 className="text-center mb-3 heading">
               EXECUTIVE <span>SUMMARY</span>
             </h1>
             <p className="lead" data-aos="fade-up">
@@ -47,9 +47,9 @@ const Intro = () => {
             <Link
               to="mailto:mmohau1@gmail.com"
               target="_blank"
-              className="btn btn-primary"
+              className="btn btn-primary mx-auto mx-md-0"
               style={{ width: "10rem" }}
-              data-aos="fade-up"
+              data-aos="zoom-in"
             >
               <i className="bi bi-chevron-right"></i>get quote
             </Link>
@@ -61,7 +61,7 @@ const Intro = () => {
             className="col-12 col-lg-5 intro-content text-center text-md-start mt-5 mt-lg-0 px-lg-5"
             style={{ position: "relative" }}
           >
-            <h1 className="heading mb-3" data-aos="fade-down">
+            <h1 className="heading mb-3 text-center">
               our <span>history</span>
             </h1>
             <p className="lead" data-aos="fade-up">
