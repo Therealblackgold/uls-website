@@ -78,7 +78,7 @@ const DirectorsNote = () => {
               style={{
                 width: "50rem",
                 position: "absolute",
-                bottom: "0",
+                bottom: "-4rem",
                 left: "35rem",
               }}
             />

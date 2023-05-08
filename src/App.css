@@ -8,7 +8,17 @@
   font-weight: 400;
 }
 
-/* Gideon Roman */
+@font-face {
+  font-family: "Avenir";
+  src: url("assets/font/Avenir_Regular/AvenirRegular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir Black";
+  src: url("assets/font/Avenir_Black/AvenirBlack.ttf");
+  font-weight: 400;
+}
 
 :root {
   --main-color: #ebc56c;
@@ -72,7 +82,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Avenir";
 }
 
 body::before {
@@ -116,15 +126,15 @@ section {
 }
 
 .heading {
-  font-family: "Gideon Roman", cursive;
+  font-family: "Avenir Black";
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 400;
   z-index: 90;
 }
 
 .heading span {
   letter-spacing: 5px;
-  font-weight: bold;
+  font-weight: 400;
   /* background-image: var(--bronze-color); */
   background-image: var(--gold-color);
   -webkit-background-clip: text;
@@ -134,7 +144,7 @@ section {
 .sub-heading {
   color: var(--primary-color);
   text-transform: capitalize;
-  font-family: "Gideon Roman", cursive;
+  font-family: "Avenir Black";
   font-weight: 700;
   letter-spacing: 1px;
 }
