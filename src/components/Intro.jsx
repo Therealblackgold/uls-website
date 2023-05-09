@@ -54,7 +54,7 @@ const Intro = () => {
             </Link>
 
             {/* MOBILE IMG */}
-            <div className="col-md d-md-none mt-5">
+            <div className="col-md d-md-none mt-5 text-center">
               <img
                 src={IMG20}
                 alt=""
@@ -100,7 +100,7 @@ const Intro = () => {
             </p>
 
             {/* MOBILE IMG */}
-            <div className="col-md d-md-none">
+            <div className="col-md d-md-none text-center">
               <img
                 src={IMG08}
                 alt=""
