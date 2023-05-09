@@ -15,9 +15,6 @@ const Intro = () => {
     <section id="intro" className="intro">
       <div className="container-fluid">
         <div className="row">
-          {/* <div className="col-md-4 intro-top" data-aos="fade-right">
-            <img src={IMG02} alt="" className="one" />
-          </div> */}
           <div className="col-12 col-lg-4 intro-content text-center text-md-start px-lg-5">
             <h1 className="text-center mb-3 heading">
               EXECUTIVE <span>SUMMARY</span>
@@ -61,10 +58,15 @@ const Intro = () => {
               <img
                 src={IMG20}
                 alt=""
-                style={{ height: "15rem", width: "auto" }}
+                style={{
+                  height: "15rem",
+                  width: "auto",
+                  borderRadius: "20px",
+                }}
               />
             </div>
           </div>
+
           {/* TWO EMPTY DIV */}
           <div className="col-md-3"></div>
           {/* THREE */}
@@ -91,7 +93,7 @@ const Intro = () => {
               The need for that service was realized and Upper Level Security
               came to be.
             </p>
-            <p className="lead" data-aos="fade-up">
+            <p className="lead" data-aos="zoom-in">
               Our previous clients include big and small organizations whom that
               we have served with pride without compromising the standard of
               service because safety is our priority.
@@ -102,7 +104,11 @@ const Intro = () => {
               <img
                 src={IMG08}
                 alt=""
-                style={{ height: "15rem", width: "auto" }}
+                style={{
+                  height: "15rem",
+                  width: "auto",
+                  borderRadius: "20px",
+                }}
               />
             </div>
 

@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import AnimatePage from "../components/AnimatePage";
-import Square from "../components/Square";
 import TeamCarousel from "../components/TeamCarousel";
 import TeamSquare from "../components/TeamSquare";
 import DirectorsNote from "../components/DirectorsNote";
 import Header from "../components/Header";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const Team = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const firstRow = [
     { name: "Sydney Gumede", title: "Operations Manager" },
     { name: "Richard Mohau Mokoena", title: "Managing Director" },
@@ -41,17 +45,17 @@ const Team = () => {
                 COMPANY MANAGEMENT & <br /> <span>COMPANY STRUCTURE</span>
               </motion.h1>
               <h4>We are Upper Level Security!!</h4>
-              <p className="lead">
+              <p className="lead" data-aos="fade-up">
                 We are a team of diverse and experienced professionals who
                 function together like a finely tuned engine.
               </p>
-              <p className="lead">
+              <p className="lead" data-aos="fade-up">
                 We work together to create dynamic solutions tailored to your
                 individual needs and ensure those solutions are executed with
                 integrity and quality.
               </p>
               <center>
-                <h2 className="sub-heading">ORGANOGRAM</h2>
+                <h2 className="sub-heading d-none d-md-block">ORGANOGRAM</h2>
                 <h3
                   className="mb-5"
                   style={{
@@ -68,7 +72,7 @@ const Team = () => {
 
           {/* ROW 1 */}
           <center>
-            <div className="row">
+            <div className="row" data-aos="fade-up">
               {firstRow.map((member) => (
                 <div key={member.name} className="col-md d-none d-md-block">
                   <TeamSquare name={member.name} title={member.title} />
@@ -79,7 +83,7 @@ const Team = () => {
 
           {/* ROW 2 */}
           <center>
-            <div className="row mx-auto">
+            <div className="row mx-auto" data-aos="zoom-in">
               <div className="col-md d-none d-md-block">
                 <TeamSquare name="Tumelo Mokoena" title="Sales & Marketing" />
               </div>

@@ -9,8 +9,13 @@ import {
 } from "../data";
 import Quotes from "../assets/qu.png";
 import Logo from "../assets/UlsLogo.png";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const List = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section
       className="services"
@@ -37,7 +42,7 @@ const List = () => {
           >
             our<span> services</span>
           </motion.h1>
-          <div className="col-lg" style={{ zIndex: "90" }}>
+          <div className="col-lg" style={{ zIndex: "90" }} data-aos="zoom-in">
             <h4 className="list-heading">Guarding Division</h4>
             <ul className="list">
               {services1.map((service, index) => (
@@ -47,7 +52,7 @@ const List = () => {
               ))}
             </ul>
           </div>
-          <div className="col-lg" style={{ zIndex: "90" }}>
+          <div className="col-lg" style={{ zIndex: "90" }} data-aos="zoom-in">
             <h4 className="list-heading">Risk Management</h4>
             <ul className="list">
               {services2.map((service, index) => (
@@ -57,7 +62,7 @@ const List = () => {
               ))}
             </ul>
           </div>
-          <div className="col-lg" style={{ zIndex: "90" }}>
+          <div className="col-lg" style={{ zIndex: "90" }} data-aos="zoom-in">
             <h4 className="list-heading">Off-Site Monitoring</h4>
             <ul className="list">
               {services3.map((service, index) => (
@@ -82,7 +87,11 @@ const List = () => {
         </div>
         {/* row 2 */}
         <div className="row">
-          <div className="col-12 col-lg" style={{ zIndex: "90" }}>
+          <div
+            className="col-12 col-lg"
+            style={{ zIndex: "90" }}
+            data-aos="zoom-in"
+          >
             <h4 className="list-heading">Electronic Security</h4>
             <ul className="list">
               {services4.map((service, index) => (
@@ -92,7 +101,11 @@ const List = () => {
               ))}
             </ul>
           </div>
-          <div className="col-12 col-lg" style={{ zIndex: "90" }}>
+          <div
+            className="col-12 col-lg"
+            style={{ zIndex: "90" }}
+            data-aos="zoom-in"
+          >
             <h4 className="list-heading">Online CCTV Security</h4>
             <ul className="list">
               {services5.map((service, index) => (
@@ -102,7 +115,11 @@ const List = () => {
               ))}
             </ul>
           </div>
-          <div className="col-12 col-lg" style={{ zIndex: "90" }}>
+          <div
+            className="col-12 col-lg"
+            style={{ zIndex: "90" }}
+            data-aos="zoom-in"
+          >
             <h4 className="list-heading">Protection & Assessment</h4>
             <ul className="list">
               {services6.map((service, index) => (

@@ -1,8 +1,13 @@
 import { vipServices1, vipServices2, vipServices3 } from "../data";
 import VipGraphic from "../assets/VipGraphic.png";
 import IMG08 from "../assets/mobile/IMG-08.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const VipList = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section
       id="vip"
@@ -37,7 +42,7 @@ const VipList = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-lg">
+          <div className="col-12 col-lg" data-aos="zoom-in">
             <h4 className="list-heading">
               Execute Protection CPO - Specializing in:
             </h4>
@@ -49,7 +54,7 @@ const VipList = () => {
               ))}
             </ul>
           </div>
-          <div className="col-12 col-lg">
+          <div className="col-12 col-lg" data-aos="zoom-in">
             <h4 className="list-heading">Team Leader – Specializing in:</h4>
             <ul className="list">
               {vipServices2.map((service, index) => (
@@ -61,7 +66,7 @@ const VipList = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4" data-aos="zoom-in">
             <h4 className="list-heading">High-Threat CPO – Specializing in:</h4>
             <ul className="list">
               {vipServices3.map((service, index) => (
@@ -73,11 +78,11 @@ const VipList = () => {
           </div>
 
           {/* MOBILE IMG */}
-          <div className="col-md text-center d-md-none mt-5">
+          <div className="col-md text-center d-md-none mt-5" data-aos="zoom-in">
             <img
               src={IMG08}
               alt=""
-              style={{ height: "20rem", width: "auto" }}
+              style={{ height: "20rem", width: "auto", borderRadius: "20px" }}
             />
           </div>
           {/* GRAPHIC */}

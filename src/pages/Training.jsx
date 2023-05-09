@@ -97,7 +97,7 @@ const Training = () => {
             </div>
 
             <div className="col-md d-md-none">
-              <img src={IMG04} alt="" />
+              <img src={IMG04} alt="" style={{ borderRadius: "20px" }} />
             </div>
           </div>
         </div>
